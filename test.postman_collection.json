@@ -1,0 +1,215 @@
+{
+  "info": {
+    "_postman_id": "c80dbeed-04e0-4c09-bc00-5c848b160509",
+    "name": "test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50084099",
+    "_collection_link": "https://go.postman.co/collection/50084099-c80dbeed-04e0-4c09-bc00-5c848b160509?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "/users/register",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "8BZXBZAE8da6vuyEmTG8n8Kb6szX",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"fullName\": \"salma\",\r\n  \"birthDate\": \"1990-01-01\",\r\n  \"email\": \"salme@gmail.com\",\r\n  \"password\": \"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/users/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/users/login",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "8BZXBZAE8da6vuyEmTG8n8Kb6szX",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"salme@gmail.com\",\r\n  \"password\": \"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/users/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/users",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY3M2EyZTU2LWIwNWEtNDU4NS1hNzA4LTYwYjM1OTc1NTQ1ZSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3Nzk2OTc4MSwiZXhwIjoxNzc3OTczMzgxfQ._qC4wSrqfKLjJOIzFaAxDq7XUlh8ZTBuPmTJzbbJv3o",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/users",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/users/:id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY3M2EyZTU2LWIwNWEtNDU4NS1hNzA4LTYwYjM1OTc1NTQ1ZSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3Nzk2OTc4MSwiZXhwIjoxNzc3OTczMzgxfQ._qC4wSrqfKLjJOIzFaAxDq7XUlh8ZTBuPmTJzbbJv3o",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/users/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "450d3ce9-caad-4ca7-902d-5a04282a5f28"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/users/:id/block",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY3M2EyZTU2LWIwNWEtNDU4NS1hNzA4LTYwYjM1OTc1NTQ1ZSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3Nzk2OTc4MSwiZXhwIjoxNzc3OTczMzgxfQ._qC4wSrqfKLjJOIzFaAxDq7XUlh8ZTBuPmTJzbbJv3o",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PATCH",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/users/:id/block",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            ":id",
+            "block"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "450d3ce9-caad-4ca7-902d-5a04282a5f28"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
