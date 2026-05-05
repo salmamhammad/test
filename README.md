@@ -30,11 +30,11 @@
 
 ##  Структура проекта
 - src/
- - controllers/
- - services/
- - repositories/
- - routes/
- - middlewares/
+  - controllers/
+  - services/
+  - repositories/
+  - routes/
+  - middlewares/
 - app.ts
 - server.ts
 - prisma/
