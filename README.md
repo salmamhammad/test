@@ -29,16 +29,16 @@
 ---
 
 ##  Структура проекта
-src/
-- controllers/
-- services/
-- repositories/
-- routes/
-- middlewares/
-app.ts
-server.ts
-prisma/
-tests/
+- src/
+ - controllers/
+ - services/
+ - repositories/
+ - routes/
+ - middlewares/
+- app.ts
+- server.ts
+- prisma/
+= tests/
 
 ---
 ##  Установка
